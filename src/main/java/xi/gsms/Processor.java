@@ -28,8 +28,9 @@ final class Processor {
                 String cmd = t[0];
 
                 if (inv.invalid) {
-                    // We still consume lines; only PROFIT will print NA.
-                    if ("PROFIT".equalsIgnoreCase(cmd)) {
+                    if ("CHECK".equalsIgnoreCase(cmd)) {
+                        handleCheck(inv);
+                    } else if("PROFIT".equalsIgnoreCase(cmd)) {
                         System.out.println("Profit/Loss: NA");
                     }
                     continue;
