@@ -1,4 +1,4 @@
-package xi.gsms;
+package src.main.java.xi.gsms;
 
 import java.io.BufferedReader;
 import java.io.IOException;
