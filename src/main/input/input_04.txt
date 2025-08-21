@@ -1,0 +1,11 @@
+STOCK Apple 10 1.5
+STOCK Banana 50 2
+STOCK Apple 30 1.8
+ORDER Apple 15 2.4
+ORDER Banana 20 2.8
+EXPIRE Apple 12
+EXPIRE Banana 5
+ORDER Apple 5 2.5
+RETURN Apple 12 2.4
+CHECK
+PROFIT

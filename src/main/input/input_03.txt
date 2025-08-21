@@ -1,0 +1,7 @@
+STOCK Apple 5 2
+STOCK Apple 10 1.5
+ORDER Apple 3 2.5
+ORDER Apple 5 3
+EXPIRE Apple 1
+CHECK
+PROFIT
