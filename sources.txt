@@ -1,0 +1,3 @@
+G:\Git\GSM_Sys_XB_Ins\src\main\java\xi\gsms\Main.java
+G:\Git\GSM_Sys_XB_Ins\src\main\java\xi\gsms\Model.java
+G:\Git\GSM_Sys_XB_Ins\src\main\java\xi\gsms\Processor.java
