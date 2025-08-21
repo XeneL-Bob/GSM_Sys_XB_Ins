@@ -2,7 +2,7 @@ package xi.gsms;
 
 import java.util.*;
 
-/** Data model classes and utilities. */
+/** Data model - classes and utilities. */
 final class Model {
 
     static final class StockBatch {
@@ -17,7 +17,7 @@ final class Model {
         SaleSegment(int qty, double cost) { this.qty = qty; this.cost = cost; }
     }
 
-    /** A single ORDER captured for later RETURNs. */
+    /** A single ORDER captured for later RETURNs (SaleRecord). */
     static final class SaleRecord {
         final String baseSellKey;       // "2.00"
         final double effectiveSell;     // after discount applied at ORDER time
@@ -31,7 +31,7 @@ final class Model {
         }
     }
 
-    /** Per-item state. */
+    /** Per-item state stances. */
     static final class ItemState {
         final Deque<StockBatch> stockFIFO = new ArrayDeque<>();
         final Deque<Integer> discountStack = new ArrayDeque<>();  // percentages, LIFO
@@ -39,7 +39,7 @@ final class Model {
         int totalQtyInStock = 0;
     }
 
-    /** Inventory for all items; LinkedHashMap preserves insertion order for CHECK printing. */
+    /** An Inventory for all items; ie like LinkedHashMap preserves insertion order for CHECK printing etc. */
     static final class Inventory {
         final Map<String, ItemState> items = new LinkedHashMap<>();
         double profit = 0.0;
@@ -50,7 +50,7 @@ final class Model {
         }
     }
 
-    // -------- utilities --------
+    // utilities
 
     static String priceKey(double p) {
         return String.format(java.util.Locale.US, "%.2f", p);

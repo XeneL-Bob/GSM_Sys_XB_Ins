@@ -15,7 +15,7 @@ public final class Main {
         } else {
             Path list = Paths.get("input_files.txt");
             if (Files.exists(list)) {
-                files = Files.readAllLines(list).stream()
+                files = Files.readAllLines(list).stream() //file read directive if statement
                         .map(String::trim)
                         .filter(s -> !s.isEmpty() && !s.startsWith("#"))
                         .collect(Collectors.toList());
@@ -24,7 +24,7 @@ public final class Main {
                         Usage:
                           java csc201.gsms.Main <file1> <file2> ...
                         or place paths one per line in input_files.txt
-                        """);
+                        """); // print in-line error handling
                 return;
             }
         }
