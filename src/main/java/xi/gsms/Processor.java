@@ -214,12 +214,11 @@ final class Processor {
         // If empty, silently ignore per spec (no exception required).
     }
 
-    private void handleCheck(Inventory inv) {
-        if (inv.invalid) return; // Spec: if NA, no need to output item quantities.
-        for (Map.Entry<String, ItemState> e : inv.items.entrySet()) {
-            System.out.println(e.getKey() + ": " + e.getValue().totalQtyInStock);
-        }
+private void handleCheck(Inventory inv) {
+    for (Map.Entry<String, ItemState> e : inv.items.entrySet()) {
+        System.out.println(e.getKey() + ": " + e.getValue().totalQtyInStock);
     }
+}
 
     private void handleProfit(Inventory inv) {
         if (inv.invalid) {
