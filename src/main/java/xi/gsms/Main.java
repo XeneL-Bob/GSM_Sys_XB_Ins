@@ -1,4 +1,4 @@
-package src.main.java.xi.gsms;
+package xi.gsms;
 
 import java.io.IOException;
 import java.nio.file.*;
