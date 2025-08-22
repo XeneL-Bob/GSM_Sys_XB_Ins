@@ -8,16 +8,15 @@ Hello Hello, This is a command-line simulator that processes a history of grocer
 ## to Build and run a quick batch run
 
 For convenience you can copy and paste the following lines into your terminal which should then give you a complete build and a batch run of the xample with all inputs (see below):
-
-#########
-cd G:\Git\GSM_Sys_XB_Ins
+```
+cd path\to\GSM_Sys_XB_Ins
 rmdir /s /q out 2>nul & mkdir out
 del sources.txt 2>nul
 for /R src\main\java %f in (*.java) do @echo %f>>sources.txt
 javac -d out @sources.txt
 
 for %F in (src\main\input\*.txt) do @echo === %~nxF === & java -cp out xi.gsms.Main "%F" & echo.
-##########
+```
 ---
 
 ## Features
@@ -94,11 +93,11 @@ input_files.txt     (optional list of input paths, one per line)
 ---
 
 ## Build (compile)
-
+I Recommend Running the build on your inline command code editor using the following bat command (win enviorment).
 ### Windows CMD
 
 ```bat
-cd G:\Git\GSM_Sys_XB_Ins
+cd path\t0\repo\GSM_Sys_XB_Ins
 rmdir /s /q out 2>nul & mkdir out
 del sources.txt 2>nul
 for /R src\main\java %f in (*.java) do @echo %f>>sources.txt
