@@ -7,7 +7,7 @@ Hello Hello, This is a command-line simulator that processes a history of grocer
 ---
 ## to Build and run a quick batch run
 
-For convenience you can copy and paste the following lines into your terminal which should then give you a complete build and a batch run of the xample with all inputs (see below):
+For convenience you can copy and paste the following lines into your designated code editor terminal which should then give you a complete build and a batch run of the xample with all inputs (see below):
 ```
 cd path\to\GSM_Sys_XB_Ins
 rmdir /s /q out 2>nul & mkdir out
